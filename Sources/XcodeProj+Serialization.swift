@@ -51,5 +51,11 @@ extension XcodeProj {
             return try PropertyListSerialization.data(fromPropertyList: dict, format: format, options: 0)
         }
     }
+    
+    public func openStepData(projectName: String? = nil) throws -> Data {
+        let projectName = projectName ?? self.projectName
+        let serializer = OpenStepSerializer(projectName: projectName, projectFile: self)
+        return try serializer.serialize().data(using: .utf8) ?? Data()
+    }
 
 }

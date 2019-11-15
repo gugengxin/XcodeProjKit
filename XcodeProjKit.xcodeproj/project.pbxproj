@@ -76,6 +76,7 @@
 		48E403481F31E8B4000C81A0 /* missingRoot.pbxproj in Resources */ = {isa = PBXBuildFile; fileRef = 48E403471F31E8B4000C81A0 /* missingRoot.pbxproj */; };
 		48E4034B1F31ED5C000C81A0 /* String+XcodeProjKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E403491F31ED43000C81A0 /* String+XcodeProjKit.swift */; };
 		48E4034E1F31FFCD000C81A0 /* XcodeProj+FilePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4034C1F31FF0D000C81A0 /* XcodeProj+FilePath.swift */; };
+		CA3CDB84237E8F6600F13CFE /* XcodeProjOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CDB83237E8F6600F13CFE /* XcodeProjOC.swift */; };
 		E48F58191F949F4800F92F20 /* PBXNativeTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4869C3801F30C66100BFED57 /* PBXNativeTarget.swift */; };
 		E48F581A1F949F4800F92F20 /* XcodeProj+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4869C33B1F30BC2800BFED57 /* XcodeProj+Serialization.swift */; };
 		E48F581B1F949F4800F92F20 /* PBXObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4869C33A1F30BC2800BFED57 /* PBXObject.swift */; };
@@ -236,6 +237,7 @@
 		48E403471F31E8B4000C81A0 /* missingRoot.pbxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.pbxproject; path = missingRoot.pbxproj; sourceTree = "<group>"; };
 		48E403491F31ED43000C81A0 /* String+XcodeProjKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+XcodeProjKit.swift"; sourceTree = "<group>"; };
 		48E4034C1F31FF0D000C81A0 /* XcodeProj+FilePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XcodeProj+FilePath.swift"; sourceTree = "<group>"; };
+		CA3CDB83237E8F6600F13CFE /* XcodeProjOC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeProjOC.swift; sourceTree = "<group>"; };
 		E48F584C1F949F4800F92F20 /* XcodeProjKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XcodeProjKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B73B861F94A20900B23049 /* XcodeProjKitTests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XcodeProjKitTests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -342,6 +344,7 @@
 		4869C3371F30BC2800BFED57 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				CA3CDB83237E8F6600F13CFE /* XcodeProjOC.swift */,
 				4869C33C1F30BC2800BFED57 /* XcodeProj.swift */,
 				48E4034C1F31FF0D000C81A0 /* XcodeProj+FilePath.swift */,
 				4869C33B1F30BC2800BFED57 /* XcodeProj+Serialization.swift */,
@@ -737,7 +740,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		48E403461F31E821000C81A0 /* swiftlint autocorrect */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -788,6 +791,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA3CDB84237E8F6600F13CFE /* XcodeProjOC.swift in Sources */,
 				4869C3811F30C66100BFED57 /* PBXNativeTarget.swift in Sources */,
 				4869C3401F30BC2800BFED57 /* XcodeProj+Serialization.swift in Sources */,
 				4869C33F1F30BC2800BFED57 /* PBXObject.swift in Sources */,
